@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios"
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Signup() {
   const [name, setName] = useState("");
@@ -98,11 +98,11 @@ export default function Signup() {
                         </button>
                       </div>
 
-                      <p className="text-center text-muted mt-5 mb-0">
+                      <p className="text-center text-muted mt-5 mb-0" style={{backgroundColor:"red"}}>
                         Have already an account?{" "}
-                        <a href="#!" className="fw-bold text-body">
+                        <Link to="/" className="fw-bold text-body">
                           <u>Login here</u>
-                        </a>
+                        </Link>
                       </p>
                     </form>
                   </div>

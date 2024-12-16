@@ -61,8 +61,7 @@ export default function Login() {
                       </label>
                     </div>
 
-                   
-
+                 
                     <div className="d-flex justify-content-center">
                       <button
                         type="submit"
@@ -75,12 +74,13 @@ export default function Login() {
                       </button>
                     </div>
 
-                    <p className="text-center text-muted mt-5 mb-0">
+                    <p className="text-center text-muted mt-5 mb-0" style={{backgroundColor:"red"}}>
                       Have already an account?{" "}
-                      <a href="#!" className="fw-bold text-body">
+                      <Link to="/register" className="fw-bold text-body">
                         <u>Login here</u>
-                      </a>
+                      </Link>
                     </p>
+
                   </form>
                 </div>
               </div>
