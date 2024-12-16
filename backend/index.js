@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-mongoose.connect("mongodb://127.0.0.1:27017/employee");
+mongoose.connect("mongodb+srv://veeresh2004m:F6yCeIV41eVy1UBi@loginpage.jbssd.mongodb.net/?retryWrites=true&w=majority&appName=LoginPage");
 app.post('/login',(req,res)=>{
     const {email,password} = req.body
     EmployeeModel.findOne({email: email})
